@@ -1,0 +1,43 @@
+//header
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 2;
+  padding: 0 100px;
+
+  img {
+    width: 200px;
+    height: 80px;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 100%;
+
+    button {
+      text-decoration: none;
+      color: white;
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      opacity: 69%;
+    }
+
+    .active-header-link {
+      opacity: 1;
+      border-bottom: 4px solid #e27866;
+    }
+  }
+}

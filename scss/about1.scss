@@ -1,0 +1,56 @@
+// ABOUT1
+
+.about1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+
+  background: black;
+  color: white;
+  height: 100vh;
+
+  > img {
+    width: 600px;
+    padding-left: 100px;
+  }
+
+  .about1-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding-right: 100px;
+
+    .long-line {
+      border-top: 3px solid #e27866;
+      width: 200px;
+    }
+
+    .icons-and-titles {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      h4 {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  //MIXINS
+  .eye-com-icon {
+    background-color: #e27866;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

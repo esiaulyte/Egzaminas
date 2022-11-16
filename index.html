@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egzaminas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper js css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="app/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="images/logo.png" alt="Cheshire_logo" />
+
+      <nav class="header-nav">
+        <button
+          onclick="showPage(event, 'home')"
+          id="home-link"
+          class="active-header-link"
+        >
+          Home
+        </button>
+        <button onclick="showPage(event, 'features')" id="features-link">
+          Features
+        </button>
+        <button onclick="showPage(event, 'about')" id="about-link">
+          About
+        </button>
+        <button onclick="showPage(event, 'pricing')" id="pricing-link">
+          Pricing
+        </button>
+        <button onclick="showPage(event, 'reviews')" id="reviews-link">
+          Reviews
+        </button>
+        <button onclick="showPage(event, 'contact')" id="contact-link">
+          Contact
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!--FIRST PAGE -->
+      <section id="home" class="first-page">
+        <div class="cheshire-county">
+          <img
+            src="images/cheshire-county-hygiene-services@2x.png"
+            alt="Cheshire_County"
+          />
+          <h1>Explained propriety of out perpetual</h1>
+          <div class="short-line"></div>
+          <p>
+            Insipidity the sufficient discretion imprudence resolution sir him
+            decisively. Proceed how any engaged visitor. Expalined properiety of
+            out perpetual his you. Feel sold off delt nay rose met you. We so
+            entreaties culvitated astonished is.
+          </p>
+          <button id="download">DOWNLOAD</button>
+        </div>
+
+        <div class="form">
+          <form action="#">
+            <div class="h3-grey">
+              <h3>Try Your <span>FREE</span> Trial Today</h3>
+            </div>
+            <div class="form-input">
+              <div class="input-wrapper">
+                <p>Your details</p>
+
+                <div class="input-details">
+                  <input
+                    type="text"
+                    name="fname"
+                    placeholder="First name"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    name="lname"
+                    placeholder="Last name"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="number"
+                    name="phone"
+                    placeholder="Phone number"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <p>Type of subscription</p>
+                <div class="subscription-type">
+                  <input
+                    id="monthly"
+                    type="radio"
+                    name="sub"
+                    value="monthly"
+                    checked
+                  />
+                  <label for="monthly">MONTHLY</label>
+                  <input id="yearly" type="radio" name="sub" value="yearly" />
+                  <label for="yearly">YEARLY</label>
+                </div>
+              </div>
+              <input id="get-started" type="submit" value="GET STARTED" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="social-media">
+        <div class="social-text">
+          <h3>Social media</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            facilis nulla ad tempora repudiandae.
+          </p>
+        </div>
+        <div class="icons">
+          <img src="images/facebook-logo.svg" alt="facebook" />
+          <img src="images/instagram-logo.svg" alt="instagram" />
+          <img src="images/twitter.svg" alt="twitter" />
+          <img src="images/pinterest.svg" alt="pinterest" />
+          <img
+            style
+            width="25px"
+            height="25px"
+            src="images/wifi-solid.svg"
+            alt="wifi"
+          />
+        </div>
+      </div>
+
+      <!-- TABS -->
+
+      <section id="features" class="tabs-content">
+        <div id="tabs-buttons">
+          <button onclick="showTab(event, 'register')" class="active">
+            <p>REGISTER</p>
+          </button>
+          <button onclick="showTab(event, 'apply')"><p>APPLY</p></button>
+          <button onclick="showTab(event, 'receive')"><p>RECEIVE</p></button>
+        </div>
+
+        <!-- Register -->
+        <div class="tabs">
+          <div id="register" class="tab block">
+            <div class="tab-allign">
+              <div class="tabs-text">
+                <h1>
+                  Tabs with soft transitioning effect. Explained propriety of
+                  out perpetual his you
+                </h1>
+                <p>
+                  Cauldron vampire witch blood nightmare mummy haunted.
+                  Trick-or-treat black cat skeleton abomination mummy candy
+                  spooky. Vampire black cat afraid chainsaw drive-in boo mummy.
+                  Skeleton monster afraid scare cauldron trick-or-treat boo.
+                  Nightmare spooky cauldron jack-o-lantern spooky blood haunted.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore explicabo laborum quis totam quo!
+                </p>
+              </div>
+              <div class="tabs-images">
+                <div class="s-img">
+                  <div class="s-img1">
+                    <img class="img1" src="images/pht2.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+
+                  <div class="s-img1">
+                    <img class="img2" src="images/pht1.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+                <div class="b-img">
+                  <div class="s-img2">
+                    <img class="img3" src="images/pht.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apply -->
+
+          <div id="apply" class="tab">
+            <div class="tab-allign">
+              <div class="tabs-text">
+                <h1>
+                  Tabs with soft transitioning effect. Explained propriety of
+                  out perpetual his you
+                </h1>
+                <p>
+                  Cauldron vampire witch blood nightmare mummy haunted.
+                  Trick-or-treat black cat skeleton abomination mummy candy
+                  spooky. Vampire black cat afraid chainsaw drive-in boo mummy.
+                  Skeleton monster afraid scare cauldron trick-or-treat boo.
+                  Nightmare spooky cauldron jack-o-lantern spooky blood haunted.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore explicabo laborum quis totam quo!
+                </p>
+              </div>
+              <div class="tabs-images">
+                <div class="s-img">
+                  <div class="s-img1">
+                    <img class="img1" src="images/img1.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+
+                  <div class="s-img1">
+                    <img class="img2" src="images/img2.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+                <div class="b-img">
+                  <div class="s-img2">
+                    <img class="img3" src="images/img3.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Receive -->
+
+          <div id="receive" class="tab">
+            <div class="tab-allign">
+              <div class="tabs-text">
+                <h1>
+                  Tabs with soft transitioning effect. Explained propriety of
+                  out perpetual his you
+                </h1>
+                <p>
+                  Cauldron vampire witch blood nightmare mummy haunted.
+                  Trick-or-treat black cat skeleton abomination mummy candy
+                  spooky. Vampire black cat afraid chainsaw drive-in boo mummy.
+                  Skeleton monster afraid scare cauldron trick-or-treat boo.
+                  Nightmare spooky cauldron jack-o-lantern spooky blood haunted.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore explicabo laborum quis totam quo!
+                </p>
+              </div>
+              <div class="tabs-images">
+                <div class="s-img">
+                  <div class="s-img1">
+                    <img class="img1" src="images/img4.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+
+                  <div class="s-img1">
+                    <img class="img2" src="images/img5.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+                <div class="b-img">
+                  <div class="s-img2">
+                    <img class="img3" src="images/img6.png" alt="" />
+                    <div class="img-hover"><p>Explore</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT1 -->
+
+      <section id="about" class="about1">
+        <img
+          src="images/cheshire-county-hygiene-services@2x.png"
+          alt="cheshire-county1"
+        />
+        <div class="about1-content">
+          <h1>Erat tempor tempus erat malasuada</h1>
+          <div class="long-line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            veritatis facere quasi voluptatibus rem enim fuga eveniet
+            voluptatum. Accusantium autem aspernatur eligendi necessitatibus
+            veniam atque nesciunt, error officiis facere dolore. Enim nisi vel
+            ad voluptates.
+          </p>
+
+          <div class="icons-and-titles">
+            <div class="eye-com-icon">
+              <img src="images/eye-solid.svg" alt="eye" />
+            </div>
+            <div class="eye-com-text">
+              <h4>Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                quos neque ipsa nulla deleniti sequi commodi consequatur maxime
+                perferendis odit.
+              </p>
+            </div>
+          </div>
+          <div class="icons-and-titles">
+            <div class="eye-com-icon">
+              <img src="images/comment-regular.svg" alt="comment" />
+            </div>
+            <div class="eye-com-text">
+              <h4>Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                harum illo. Ipsam rerum nihil nobis quos esse autem, incidunt
+                rem, quod, magnam asperiores odio eaque!.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT2 -->
+
+      <section class="about2">
+        <h1>WHY THIS IS AWESOME</h1>
+        <div class="short-line2"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+          dolor?
+        </p>
+        <div class="about2-content">
+          <div class="about2-content-inside">
+            <div class="eye-com-icon">
+              <img src="images/award-solid.svg" alt="award" />
+            </div>
+            <div class="eye-com-text">
+              <h3>Thoughful Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                harum illo. Ipsam rerum nihil nobis.
+              </p>
+            </div>
+          </div>
+          <div class="about2-content-inside">
+            <div class="eye-com-icon">
+              <img src="images/seedling-solid.svg" alt="seedling" />
+            </div>
+            <div class="eye-com-text">
+              <h3>Thoughful Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                harum illo. Ipsam rerum nihil nobis.
+              </p>
+            </div>
+          </div>
+          <div class="about2-content-inside">
+            <div class="eye-com-icon">
+              <img src="images/cc-visa.svg" alt="visa" />
+            </div>
+            <div class="eye-com-text">
+              <h3>Thoughful Design</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section id="pricing" class="pricing">
+        <div class="pricing-options">
+          <h1>PRICING OPTIONS</h1>
+          <div class="short-line3"></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
+            quibusdam?
+          </p>
+        </div>
+        <div class="price-boxes-flex">
+          <div class="price-boxes">
+            <div class="price">
+              <h4>Basic</h4>
+              <h1><span class="dollar">&#36;</span>0</h1>
+              <p>Free for Life</p>
+            </div>
+            <div class="green-line"></div>
+
+            <ul>
+              <li>1 GB OF SPACE</li>
+              <li>10 GB OF BANDWIDTH</li>
+              <li>3 WEBSITES</li>
+              <li>BASIC CUSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>EMAIL SUPPORT</li>
+            </ul>
+          </div>
+          <div id="price-boxes1" class="price-boxes">
+            <div class="price">
+              <h4>Professional</h4>
+              <h1><span class="dollar">&#36;</span>19</h1>
+              <p>Monthly Payment</p>
+            </div>
+            <div class="green-line1">OUR MOST POPULAR</div>
+
+            <ul>
+              <li>5 GB OF SPACE</li>
+              <li>50 GB OF BANDWIDTH</li>
+              <li>12 WEBSITES</li>
+              <li>ADVANCED CUSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>EMAIL SUPPORT</li>
+            </ul>
+          </div>
+          <div class="price-boxes">
+            <div class="price">
+              <h4>Enterprise</h4>
+              <h1><span class="dollar">&#36;</span>70</h1>
+              <p>Monthly Payment</p>
+            </div>
+            <div class="green-line"></div>
+
+            <ul>
+              <li>UNLIMITED SPACE</li>
+              <li>UNLIMITED BANDWIDTH</li>
+              <li>100 WEBSITES</li>
+              <li>ADVANCED CUSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>24/7 CUSTOMER SUPPORT</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEEDBACK -->
+      <section id="reviews" class="customer-feedback">
+        <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+        <div class="short-line4"></div>
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+
+                <div class="feedback-name">
+                  <img src="images/pr12.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum.
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr11.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus vitae molestiae, architecto dolores
+                    voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr10.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr1.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum.
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr2.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr3.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- SLIDE 3 -->
+            <!-- <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr4.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum.
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr5.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr6.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- SLIDE 4 -->
+            <!-- <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr7.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum.
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr8.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-boxes">
+                <div class="chat">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem soluta exercitationem mollitia minus et qui quam vel
+                    non illum delectus minima inventore rem quia magnam vitae
+                    molestiae, architecto dolores voluptatem?
+                  </p>
+                </div>
+                <div class="feedback-name">
+                  <img src="images/pr9.png" alt="profile1" />
+                  <div class="name-job">
+                    <h3>Susan W.</h3>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT US -->
+
+      <section id="contact" class="contact">
+        <div class="contact-text">
+          <h1>CONTACT US</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+            reprehenderit.
+          </p>
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="contact-form-input">
+              <div class="contact-input-wrapper">
+                <div class="contact-input-details">
+                  <input
+                    type="text"
+                    name="fname"
+                    placeholder="First name"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    name="lname"
+                    placeholder="Last name"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="number"
+                    name="phone"
+                    placeholder="Phone number"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="subscription-type">
+                  <input
+                    id="personal"
+                    type="radio"
+                    name="contact"
+                    value="personal"
+                    checked
+                  />
+                  <label for="personal">PERSONAL</label>
+                  <input
+                    id="company"
+                    type="radio"
+                    name="contact"
+                    value="company"
+                  />
+                  <label for="company">COMPANY</label>
+                </div>
+              </div>
+              <input id="send" type="submit" value="SEND" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- BOTTOM MEDIA -->
+
+      <footer class="social-media2">
+        <div class="icons">
+          <img src="images/facebook-logo.svg" alt="facebook" />
+          <img src="images/instagram-logo.svg" alt="instagram" />
+          <img src="images/twitter.svg" alt="twitter" />
+          <img src="images/pinterest.svg" alt="pinterest" />
+          <img src="images/wifi-solid.svg" alt="wifi" />
+        </div>
+        <p>© 2019 Cheshire County</p>
+      </footer>
+    </main>
+
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>

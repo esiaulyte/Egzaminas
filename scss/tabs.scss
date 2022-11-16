@@ -1,0 +1,134 @@
+// TABS
+
+.tabs-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+  background: url(../../images/component.png),
+    linear-gradient(90deg, #e2786675 10%, #6695e26b 90%);
+  // BACKGROUND OPACITY
+
+  height: 100vh;
+  color: white;
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: overlay;
+
+  #tabs-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 20px;
+
+    button {
+      width: 130px;
+      height: 130px;
+      background-color: #a37169;
+      border: none;
+      font-weight: bold;
+      color: white;
+      font-size: 1.1em;
+
+      p {
+        transform: rotate(-45deg); // TESKSTO PASUKIMAS
+        opacity: 0.5;
+      }
+    }
+
+    .active {
+      background-color: #e27866;
+
+      p {
+        opacity: 1;
+      }
+    }
+  }
+
+  .tab {
+    display: none;
+
+    .tab-allign {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      padding-right: 100px;
+
+      .tabs-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+
+      .tabs-images {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .s-img {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
+
+      .img1,
+      .img2 {
+        width: 220px;
+        height: 220px;
+        position: relative;
+        object-fit: cover;
+      }
+
+      .img3 {
+        height: 220px;
+        width: 460px;
+      }
+    }
+  }
+
+  .block {
+    display: block;
+  }
+}
+
+.s-img1,
+.s-img2 {
+  height: 220px;
+  position: relative;
+
+  .img-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+    background-color: rgba($color: #e27866, $alpha: 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      position: absolute;
+      opacity: 1 !important;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+
+  &:hover .img-hover {
+    opacity: 1;
+  }
+}
