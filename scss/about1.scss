@@ -5,22 +5,20 @@
   flex-direction: row;
   align-items: center;
   gap: 100px;
-
+  padding-left: 100px;
+  padding-right: 100px;
   background: black;
   color: white;
   height: 100vh;
 
   > img {
     width: 600px;
-    padding-left: 100px;
   }
 
   .about1-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
-    padding-right: 100px;
 
     .long-line {
       border-top: 3px solid #e27866;
@@ -51,6 +49,49 @@
     img {
       width: 30px;
       height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about1 {
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    h1 {
+      font-size: 1.8em;
+    }
+
+    > img {
+      width: 200px;
+    }
+
+    .about1-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .long-line {
+        width: 100px;
+      }
+
+      .icons-and-titles {
+        gap: 15px;
+      }
+    }
+
+    .eye-com-icon {
+      width: 50px;
+      height: 50px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }

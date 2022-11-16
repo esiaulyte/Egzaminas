@@ -48,6 +48,7 @@
       background: transparent;
       color: white;
       border-color: white;
+      cursor: url(../../images/hand-point-up-solid.svg), pointer;
     }
   }
 }
@@ -83,7 +84,7 @@
 
     .form-input {
       width: 100%;
-      height: 88%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -99,7 +100,7 @@
       .input-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 10%;
+        gap: 15%;
         height: 60%;
         width: 80%;
       }
@@ -107,7 +108,6 @@
       .input-details {
         display: flex;
         flex-direction: column;
-        gap: 20px;
         width: 100%;
 
         input {
@@ -167,6 +167,76 @@
       color: white;
       font-size: 1.3em;
       border: none;
+      cursor: url(../../images/hand-point-up-solid.svg), pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .first-page {
+    flex-direction: column;
+    // font-size: 0.6em;
+    padding: 60px 30px;
+    align-items: center;
+    height: 126vh;
+
+    img {
+      display: none;
+    }
+    .cheshire-county {
+      width: 100%;
+      font-size: 0.7em;
+      height: 50%;
+    }
+  }
+  .form {
+    width: 100%;
+    height: 400px;
+
+    form {
+      height: 80%;
+
+      .h3-grey {
+        h3 {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 1.1em;
+        }
+      }
+
+      .form-input {
+        height: 60%;
+        padding-top: 4%;
+
+        p {
+          font-size: 0.9em;
+        }
+
+        .input-wrapper {
+          gap: 10%;
+          height: 80%;
+        }
+
+        .input-details {
+          input {
+            height: 40px;
+          }
+        }
+      }
+
+      .subscription-type {
+        gap: 10px;
+        width: 100%;
+        font-size: 0.9em;
+      }
+
+      #get-started {
+        font-size: 1.2em;
+        line-height: 40px;
+        padding-bottom: 40px;
+        cursor: pointer;
+        margin-top: 100px;
+      }
     }
   }
 }

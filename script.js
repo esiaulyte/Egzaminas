@@ -1,3 +1,5 @@
+const burger = document.getElementById("burger");
+const sideNav = document.querySelector(".side-nav");
 const tabs = document.getElementsByClassName("tab");
 const buttons = document
   .getElementById("tabs-buttons")
@@ -41,6 +43,13 @@ function showPage(event, id) {
     }
   }
 }
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 768) {
+    burger.classList.remove("rotate");
+    sideNav.classList.remove("translate");
+  }
+});
 
 // const nav1 = document;
 // const links1 = nav1.querySelectorAll(".link");

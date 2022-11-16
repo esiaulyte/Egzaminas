@@ -7,6 +7,8 @@
   gap: 40px;
   height: 100vh;
   padding-top: 6%;
+  padding-right: 100px;
+  padding-left: 100px;
 
   .short-line2 {
     border-top: 3px solid #e27866;
@@ -52,6 +54,64 @@
     img {
       width: 30px;
       height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about2 {
+    gap: 20px;
+    height: 120vh;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.9em;
+    }
+
+    .short-line2 {
+      width: 50px;
+    }
+
+    .about2-content {
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 10px;
+
+      .about2-content-inside {
+        width: 100%;
+        gap: 10px;
+
+        h3 {
+          font-size: 1.3em;
+        }
+
+        p {
+          color: gray;
+        }
+      }
+    }
+
+    // MIXINS
+    .eye-com-icon {
+      border: 2px solid #e27866;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }

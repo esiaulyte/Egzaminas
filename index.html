@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Egzaminas</title>
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
@@ -25,6 +34,34 @@
       <img src="images/logo.png" alt="Cheshire_logo" />
 
       <nav class="header-nav">
+        <button
+          onclick="showPage(event, 'home')"
+          id="home-link"
+          class="active-header-link"
+        >
+          Home
+        </button>
+        <button onclick="showPage(event, 'features')" id="features-link">
+          Features
+        </button>
+        <button onclick="showPage(event, 'about')" id="about-link">
+          About
+        </button>
+        <button onclick="showPage(event, 'pricing')" id="pricing-link">
+          Pricing
+        </button>
+        <button onclick="showPage(event, 'reviews')" id="reviews-link">
+          Reviews
+        </button>
+        <button onclick="showPage(event, 'contact')" id="contact-link">
+          Contact
+        </button>
+        <button id="burger">
+          <i class="fa fa-bars"></i>
+        </button>
+      </nav>
+
+      <nav class="side-nav">
         <button
           onclick="showPage(event, 'home')"
           id="home-link"
@@ -114,6 +151,7 @@
                   <label for="yearly">YEARLY</label>
                 </div>
               </div>
+
               <input id="get-started" type="submit" value="GET STARTED" />
             </div>
           </form>
@@ -207,11 +245,11 @@
                   out perpetual his you
                 </h1>
                 <p>
-                  Cauldron vampire witch blood nightmare mummy haunted.
-                  Trick-or-treat black cat skeleton abomination mummy candy
-                  spooky. Vampire black cat afraid chainsaw drive-in boo mummy.
-                  Skeleton monster afraid scare cauldron trick-or-treat boo.
-                  Nightmare spooky cauldron jack-o-lantern spooky blood haunted.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestiae recusandae deleniti exercitationem temporibus atque
+                  fuga, aspernatur blanditiis error culpa? Beatae, dolorem
+                  recusandae eligendi distinctio sit dolorum quidem inventore
+                  voluptate laudantium?
                 </p>
 
                 <p>
@@ -251,11 +289,10 @@
                   out perpetual his you
                 </h1>
                 <p>
-                  Cauldron vampire witch blood nightmare mummy haunted.
                   Trick-or-treat black cat skeleton abomination mummy candy
-                  spooky. Vampire black cat afraid chainsaw drive-in boo mummy.
-                  Skeleton monster afraid scare cauldron trick-or-treat boo.
-                  Nightmare spooky cauldron jack-o-lantern spooky blood haunted.
+                  spooky. Skeleton monster afraid scare cauldron trick-or-treat
+                  boo. Nightmare spooky cauldron jack-o-lantern spooky blood
+                  haunted.
                 </p>
 
                 <p>
@@ -470,8 +507,8 @@
                 <div class="feedback-name">
                   <img src="images/pr12.png" alt="profile1" />
                   <div class="name-job">
-                    <h3>Susan W.</h3>
-                    <p>Manager</p>
+                    <h3>John M.</h3>
+                    <p>Photographer</p>
                   </div>
                 </div>
               </div>
@@ -488,7 +525,7 @@
                 <div class="feedback-name">
                   <img src="images/pr11.png" alt="profile1" />
                   <div class="name-job">
-                    <h3>Susan W.</h3>
+                    <h3>Johnana B.</h3>
                     <p>Manager</p>
                   </div>
                 </div>
@@ -508,13 +545,11 @@
                   <img src="images/pr10.png" alt="profile1" />
                   <div class="name-job">
                     <h3>Susan W.</h3>
-                    <p>Manager</p>
+                    <p>Freelancer</p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- SLIDE 2 -->
             <div class="swiper-slide">
               <div class="feedback-boxes">
                 <div class="chat">
@@ -528,7 +563,7 @@
                 <div class="feedback-name">
                   <img src="images/pr1.png" alt="profile1" />
                   <div class="name-job">
-                    <h3>Susan W.</h3>
+                    <h3>Issabela .</h3>
                     <p>Manager</p>
                   </div>
                 </div>

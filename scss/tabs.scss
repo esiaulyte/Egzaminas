@@ -15,11 +15,13 @@
   background-position: bottom;
   background-size: cover;
   background-blend-mode: overlay;
+  padding-left: 100px;
+  padding-right: 100px;
 
   #tabs-buttons {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+
     gap: 20px;
 
     button {
@@ -30,9 +32,10 @@
       font-weight: bold;
       color: white;
       font-size: 1.1em;
+      cursor: url(../../images/hand-point-up-solid.svg), pointer;
 
       p {
-        transform: rotate(-45deg); // TESKSTO PASUKIMAS
+        transform: rotate(-45deg);
         opacity: 0.5;
       }
     }
@@ -55,7 +58,6 @@
       justify-content: center;
       align-items: center;
       gap: 5%;
-      padding-right: 100px;
 
       .tabs-text {
         display: flex;
@@ -118,6 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: url(../../images/hand-point-up-solid.svg), pointer;
 
     p {
       position: absolute;
@@ -130,5 +133,94 @@
 
   &:hover .img-hover {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs-content {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+    height: 110vh;
+    padding: 30px 40px;
+
+    #tabs-buttons {
+      flex-direction: row;
+      gap: 20px;
+
+      button {
+        width: 100px;
+        height: 80px;
+        font-size: 0.9em;
+        cursor: pointer;
+
+        p {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    .tab {
+      display: none;
+
+      .tab-allign {
+        flex-direction: column;
+        gap: 2%;
+
+        .tabs-text {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-bottom: 20px;
+
+          h1 {
+            font-size: 1.5em;
+          }
+
+          p {
+            font-size: 0.9em;
+          }
+        }
+
+        .tabs-images {
+          flex-direction: column;
+          gap: 10px;
+
+          .s-img {
+            display: flex;
+            gap: 10px;
+          }
+        }
+
+        .img1,
+        .img2 {
+          width: 150px;
+          height: 150px;
+          position: relative;
+          object-fit: cover;
+        }
+
+        .img3 {
+          height: 150px;
+          width: 310px;
+        }
+      }
+    }
+    .block {
+      display: block;
+    }
+  }
+
+  .s-img1,
+  .s-img2 {
+    height: 150px;
+
+    .img-hover {
+      cursor: pointer;
+      p {
+        font-size: 1.1em;
+      }
+    }
   }
 }
