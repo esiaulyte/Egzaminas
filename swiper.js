@@ -3,7 +3,9 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
+  spaceBetween: 1000,
   centeredSlides: true,
+  spaceBetween: 10,
 
   // If we need pagination
   pagination: {
@@ -18,40 +20,10 @@ const swiper = new Swiper(".swiper", {
 
       autoplay: false,
     },
+
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 100,
+    },
   },
 });
-
-// const swiper1 = new Swiper(".swiper", {
-//   // Optional parameters
-//   direction: "horizontal",
-//   loop: true,
-//   allowSlideNext: true,
-//   allowSlideNext: true,
-//   speed: 1000,
-//   autoplay: {
-//     disableOnInteraction: false,
-//     pauseOnMouseEnter: true,
-//     delay: 2000,
-//   },
-
-//   // If we need pagination
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     // when window width is >= 320px
-//     1000: {
-//       slidesPerView: 3,
-//       spaceBetween: 3,
-//       allowSlideNext: false,
-//       allowSlideNext: false,
-//       autoplay: false,
-//     },
-//   },
-// });

@@ -5,11 +5,9 @@
   flex-direction: row;
   align-items: center;
   gap: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: $padding-r-l;
   background: black;
   color: white;
-  height: 100vh;
 
   > img {
     width: 600px;
@@ -21,7 +19,7 @@
     gap: 40px;
 
     .long-line {
-      border-top: 3px solid #e27866;
+      border-top: 3px solid $rose;
       width: 200px;
     }
 
@@ -37,19 +35,8 @@
   }
   //MIXINS
   .eye-com-icon {
-    background-color: #e27866;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-
-    img {
-      width: 30px;
-      height: 30px;
-    }
+    background-color: $rose;
+    @include icons;
   }
 }
 
@@ -58,7 +45,6 @@
     padding-top: 30px;
     flex-direction: column;
     gap: 40px;
-    height: 100vh;
     padding-right: 40px;
     padding-left: 40px;
 

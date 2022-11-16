@@ -5,13 +5,10 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  height: 100vh;
-  padding-top: 6%;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: $padding-r-l;
 
   .short-line2 {
-    border-top: 3px solid #e27866;
+    border-top: 3px solid $rose;
     width: 5%;
   }
 
@@ -42,26 +39,15 @@
 
   // MIXINS
   .eye-com-icon {
-    border: 2px solid #e27866;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-
-    img {
-      width: 30px;
-      height: 30px;
-    }
+    border: 2px solid $rose;
+    @include icons;
   }
 }
 
 @media (max-width: 768px) {
   .about2 {
     gap: 20px;
-    height: 120vh;
+    // height: 120vh;
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
@@ -94,23 +80,6 @@
         p {
           color: gray;
         }
-      }
-    }
-
-    // MIXINS
-    .eye-com-icon {
-      border: 2px solid #e27866;
-      width: 100px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      flex-shrink: 0;
-
-      img {
-        width: 50px;
-        height: 50px;
       }
     }
   }

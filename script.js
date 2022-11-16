@@ -1,5 +1,3 @@
-const burger = document.getElementById("burger");
-const sideNav = document.querySelector(".side-nav");
 const tabs = document.getElementsByClassName("tab");
 const buttons = document
   .getElementById("tabs-buttons")
@@ -10,6 +8,8 @@ const headerLinks = document
   .querySelectorAll("button");
 
 const pageSections = document.querySelectorAll("section");
+const burgerMenu = document.getElementById("burger");
+const sideNav = document.getElementById("side-nav");
 
 function showTab(event, id) {
   for (var tab of tabs) {
@@ -28,6 +28,9 @@ function showPage(event, id) {
   for (var link of headerLinks) {
     link.classList.remove("active-header-link");
 
+    sideNav.classList.remove("translate");
+    burgerMenu.classList.remove("rotate");
+
     if (link.id === id + "-link") {
       for (var section of pageSections) {
         if (section.id === id) {
@@ -44,12 +47,17 @@ function showPage(event, id) {
   }
 }
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 768) {
-    burger.classList.remove("rotate");
-    sideNav.classList.remove("translate");
-  }
+burgerMenu.addEventListener("click", function () {
+  sideNav.classList.toggle("translate");
+  this.classList.toggle("rotate");
 });
+
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth > 768) {
+//     burger.classList.remove("rotate");
+//     sideNav.classList.remove("translate");
+//   }
+// });
 
 // const nav1 = document;
 // const links1 = nav1.querySelectorAll(".link");

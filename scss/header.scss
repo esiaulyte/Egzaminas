@@ -9,8 +9,8 @@ header {
   background: black;
   top: 0;
   left: 0;
-  // position: sticky;
-  z-index: 2;
+  position: sticky;
+  z-index: 3;
   padding: 0 100px;
 
   img {
@@ -19,11 +19,12 @@ header {
     position: relative;
   }
 
-  nav {
+  .header-nav {
     display: flex;
     flex-direction: row;
     gap: 50px;
     height: 100%;
+    z-index: 3;
 
     button {
       text-decoration: none;
@@ -37,51 +38,67 @@ header {
 
     .active-header-link {
       opacity: 1;
-      border-bottom: 4px solid #e27866;
+      border-bottom: 4px solid $rose;
     }
   }
 
   #burger {
     display: none;
-    transition: 0.3s;
   }
+}
 
-  .rotate {
-    transform: rotateZ(-90deg);
-  }
+#side-nav {
+  display: none;
+}
 
-  .side-nav {
-    top: 50px;
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 60vh;
-    width: 200px;
-    transition: 0.3s;
-  }
+@media (max-width: 768px) {
+  header {
+    padding: 0 30px;
 
-  .side-nav.translate {
-    display: flex;
-  }
+    .header-nav {
+      button:not(:last-child) {
+        display: none;
+      }
+    }
 
-  @media (max-width: 768px) {
     #burger {
-      display: block;
-      position: absolute;
-      right: 20px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .rotate {
+      transform: rotateZ(-90deg);
+    }
+  }
+
+  #side-nav {
+    z-index: 2;
+    top: -300px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    transition: 0.3s ease;
+    background: rgb(0, 0, 0);
+    left: 0;
+
+    button {
+      position: relative;
+      z-index: 2;
+      text-decoration: none;
+      color: white;
+      background: none;
+      border: none;
       font-size: 1.2em;
+      cursor: url(../../images/hand-point-up-solid.svg), pointer;
+      opacity: 69%;
+      height: 50px;
     }
+  }
 
-    nav {
-      flex-direction: column;
-      align-items: center;
-      min-height: 50px;
-      height: auto;
-    }
-
-    nav .container .link {
-      display: none;
-    }
+  #side-nav.translate {
+    top: 95px;
   }
 }

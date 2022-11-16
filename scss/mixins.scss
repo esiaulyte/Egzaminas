@@ -1,0 +1,24 @@
+@mixin icons {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@mixin input-button {
+  height: 16%;
+  border-radius: 10px;
+  background: $green;
+  color: white;
+  font-size: 1.3em;
+  border: none;
+  cursor: url(../../images/hand-point-up-solid.svg), pointer;
+}

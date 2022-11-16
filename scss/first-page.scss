@@ -12,16 +12,16 @@
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
-  padding: 6% 100px 0 100px;
+  padding: 6% 100px 6% 100px;
 
   .cheshire-county {
     width: 60%;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 4%;
+    gap: 2%;
     justify-content: space-between;
-    height: 70%;
+    height: 100%;
 
     img {
       width: 400px;
@@ -54,8 +54,6 @@
 }
 
 .form {
-  // padding-top: 5%;
-  // padding-right: 7%;
   width: 35%;
   height: 70%;
 
@@ -69,15 +67,16 @@
       background: rgba(128, 128, 128, 0.125);
       height: 12%;
       width: 100%;
+      text-align: center;
 
       h3 {
         text-align: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 1.3em;
 
         span {
-          color: #e38f49;
+          color: $rose;
         }
       }
     }
@@ -132,7 +131,7 @@
         width: 15px;
         height: 15px;
         border-radius: 15px;
-        border: 3px solid #41d395;
+        border: 3px solid $green;
         position: relative;
       }
 
@@ -141,7 +140,7 @@
         position: absolute;
         width: 7px;
         height: 7px;
-        background: #41d395;
+        background: $green;
         border-radius: 7px;
         top: 0;
         left: 0;
@@ -158,16 +157,12 @@
     }
 
     #get-started {
-      justify-self: end;
-      height: 16%;
+      justify-self: flex-end;
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
-      background: #41d395;
+      background: $green;
       width: 100%;
-      color: white;
-      font-size: 1.3em;
-      border: none;
-      cursor: url(../../images/hand-point-up-solid.svg), pointer;
+      @include input-button;
     }
   }
 }

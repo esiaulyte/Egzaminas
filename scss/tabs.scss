@@ -8,15 +8,11 @@
   gap: 5%;
   background: url(../../images/component.png),
     linear-gradient(90deg, #e2786675 10%, #6695e26b 90%);
-  // BACKGROUND OPACITY
-
-  height: 100vh;
   color: white;
   background-position: bottom;
   background-size: cover;
   background-blend-mode: overlay;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 50px 100px;
 
   #tabs-buttons {
     display: flex;
@@ -27,7 +23,7 @@
     button {
       width: 130px;
       height: 130px;
-      background-color: #a37169;
+      background-color: $tabs-color;
       border: none;
       font-weight: bold;
       color: white;
@@ -41,7 +37,7 @@
     }
 
     .active {
-      background-color: #e27866;
+      background-color: $rose;
 
       p {
         opacity: 1;
@@ -116,7 +112,7 @@
     height: 100%;
     width: 100%;
     transition: 0.3s ease;
-    background-color: rgba($color: #e27866, $alpha: 0.75);
+    background-color: rgba($color: $rose, $alpha: 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,10 +135,9 @@
 @media (max-width: 768px) {
   .tabs-content {
     flex-direction: column;
-    justify-content: center;
+
     width: 100%;
-    gap: 2%;
-    height: 110vh;
+    gap: 30px;
     padding: 30px 40px;
 
     #tabs-buttons {
